@@ -30,6 +30,15 @@
   background: #2a3544;
   z-index: 0;
 }
+.progress-bar-fill {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  height: 2px;
+  background: #00ffd1;
+  z-index: 1;
+  transition: width 0.3s ease-in-out;
+}
 
 .progress-step {
   display: flex;
