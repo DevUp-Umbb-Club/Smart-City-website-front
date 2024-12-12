@@ -20,7 +20,7 @@
   width: 100%;
 }
 
-.still-have-a-question-content h1 {
+.still-have-a-question-content h2 {
   font-size:56px;
   font-weight: 700;
   color: white;
@@ -89,7 +89,7 @@
 
 
 @media screen and (max-width:1024px){
-    .still-have-a-question-content h1 {
+    .still-have-a-question-content h2 {
         font-size:48px;
       }
 
@@ -127,7 +127,7 @@
 
 @media screen and (max-width:768px){
 
-    .still-have-a-question-content h1 {
+    .still-have-a-question-content h2 {
         font-size:32px;
       }
 
@@ -170,7 +170,7 @@
 
 @media screen and (max-width:500px){
 
-    .still-have-a-question-content h1 {
+    .still-have-a-question-content h2 {
         font-size:32px;
       }
 

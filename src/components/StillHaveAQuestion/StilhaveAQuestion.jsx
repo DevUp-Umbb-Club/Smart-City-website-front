@@ -9,7 +9,7 @@ const StilhaveAQuestion = () => {
   return (
     <section className='still-have-a-question'>
         <div className='still-have-a-question-content'>
-            <h1>Still have a question?</h1>
+            <h2>Still have a question?</h2>
             <p id='contentquestion'>Contact Us</p>
 
             <div className='still-have-a-question-cards'>
