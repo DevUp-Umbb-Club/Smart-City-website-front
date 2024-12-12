@@ -9,11 +9,15 @@ import location from '../../assets/location.png'
 import trending from '../../assets/trending.png'
 
 import gift from '../../assets/gift.png'
+
+
+import moreaboutImage from '../../assets/moreabout.png'
 const MoreAbout = () => {
   return (
     <section className='moreabout'>
 
     <div className='moreabout-content'>
+        <img id='moreaboutimage' src={moreaboutImage}  />
         <h2>More About BSC</h2>
         <p>Join us for an exciting three-day onsite event, running from [insert date]. During this time, participants will work intensively to develop innovative solutions to a real-world challenge.
         </p>

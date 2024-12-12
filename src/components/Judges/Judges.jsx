@@ -1,11 +1,15 @@
 
 import './Judges.css'
 
+
+import judgesImage from '../../assets/judges.png'
 import merouane from '../../assets/merouane.png'
 const Judges = () => {
   return (
     <section className='judges'>
         <div className='judges-content'>
+
+            <img src={judgesImage} id='judgesimages' />
         <h2>Judges</h2>
         <div className='judges-cards'>
 
