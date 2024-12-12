@@ -8,7 +8,7 @@ const WhyParticipate = () => {
     <section className='why-participate'>
 
         <div className='why-participate-content'>
-            <h1>Why participate</h1>
+            <h2>Why participate</h2>
         
 
         <div className='why-participate-cards'>

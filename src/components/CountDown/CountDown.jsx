@@ -46,7 +46,7 @@ const CountDown = () => {
     return (
         <section className='countdown'>
             <div className='countdown-content'>
-                <h1>Registration closes in :</h1>
+                <h2>Registration closes in</h2>
                 <div className='countdown-timer'>
                     <div className='countdown-box days'>
                         <span>0</span>

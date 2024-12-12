@@ -4,12 +4,16 @@ import './StiHaveAQuestion.css'
 import instgramLogo from '../../assets/Instagram.png'
 import facebookLogo from '../../assets/Facebook.png'
 import linkedinLogo from '../../assets/Linkedin.png'
+
+import stillhavequestionImage from '../../assets/stillhavequestion.png'
 import './StiHaveAQuestion.css'
 const StilhaveAQuestion = () => {
   return (
     <section className='still-have-a-question'>
         <div className='still-have-a-question-content'>
-            <h1>Still have a question?</h1>
+
+            <img src={stillhavequestionImage} id='stillhaveaquestionimage' />
+            <h2>Still have a question?</h2>
             <p id='contentquestion'>Contact Us</p>
 
             <div className='still-have-a-question-cards'>
