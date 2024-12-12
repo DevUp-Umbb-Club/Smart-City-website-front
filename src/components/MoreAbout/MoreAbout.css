@@ -5,6 +5,7 @@
     padding: 1rem;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .moreabout-content {
@@ -16,6 +17,7 @@
     margin-top: 50px;
     width: 100%;
     position: relative;
+    box-sizing: border-box;
 }
 #moreaboutimage{
     object-fit: cover;
@@ -133,6 +135,8 @@
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
+        width: 100%; /* Ensure it takes full width */
+        max-width: 100%; /* Restrict max width to avoid overflow */
     }
     .moreabout-cards .moreabout-card {
         width: 310px;
