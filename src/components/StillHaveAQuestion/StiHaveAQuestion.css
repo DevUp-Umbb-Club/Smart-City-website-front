@@ -26,8 +26,9 @@
     object-fit: cover;
     position: absolute;
     left: 0;
-    bottom: -50%;
+    bottom: -10%;
     z-index: -100;
+    
 }
 .still-have-a-question-content h2 {
     font-size: 2.5rem;

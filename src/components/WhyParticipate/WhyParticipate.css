@@ -269,3 +269,20 @@
     }
     
 }
+
+
+@media screen and (max-width:480px){
+
+    .why-participate-cards .why-participate-card{
+        
+        
+        width: 90%; 
+      
+        padding: 1rem; 
+       
+    }
+    
+    
+    
+    
+}

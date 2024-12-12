@@ -169,7 +169,8 @@
         font-weight: 700;
     }
     .moreabout-content p {
-        font-size: 14px;  
+        font-size:20px;
+        
         text-align: center;
     }
     .moreabout-cards {
@@ -178,7 +179,9 @@
         align-items: center;
     }
     .moreabout-cards .moreabout-card {
-        width: 300px;
+        width: 90%; 
+      
+        padding: 1rem; 
         height: 210px;
         justify-content: center;
     align-items: center;
