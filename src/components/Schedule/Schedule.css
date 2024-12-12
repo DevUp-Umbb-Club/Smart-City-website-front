@@ -1,0 +1,244 @@
+.total{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  background-color: #172a45;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: left;
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.agenda-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #5dc1b9;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 30px;
+  position: relative;
+}
+
+.timeline-item .dot {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  border: 2px solid #5dc1b9;
+}
+
+.timeline-item .dot.active {
+  background: #5dc1b9;
+}
+
+.content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  font-size: 14px;
+  color: #a0aec0;
+}
+
+.activity {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.schedule {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 83.2px;
+  color: white;
+}
+
+.description {
+  width: 282px;
+  height: 16px;
+  gap: 7px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.line {
+  width: 131px;
+  height: 2px;
+  background-color: #A139F5;
+}
+
+.scheduleagenda {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15.6px;
+  color: white;
+}
+
+.firstside{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+
+}
+.buttons {
+  width: 369px;
+  height: 43px;
+  margin-top: 5%;
+  display: flex;
+  gap: 24px;
+}
+
+.button {
+  width: 107px;
+  height: 43px;
+  border-radius: 6px;
+  padding: 15px 41px;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.agendapart {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.date {
+  font-size: 25px;
+  font-weight: 600;
+  color: #FC0FF5;
+  margin-bottom: -12%;
+}
+
+.day {
+  font-size: 200px;
+  font-weight: 600;
+  color: #A139F533;
+}
+.titles{
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .agendapart {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .buttons {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+  }
+  .days {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 5%;
+  }
+  .day {
+    font-size: 90px;
+  }
+  .date {
+    font-size: 20px;
+  }
+  .agenda-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card {
+    background-color: #172a45;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    color: white;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .button {
+    width: 10%;
+    display: flex;
+    text-align: center;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 4%;
+  }
+  .total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+ 
+}
