@@ -1,0 +1,270 @@
+
+
+.why-participate{
+
+    margin: 0;
+    margin-top: 10rem;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+
+    
+    
+}
+
+.why-participate-content{
+    display: flex;
+    padding-inline: 3%;
+    align-items: flex-start;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.why-participate-content h1{
+   
+   /*  padding-left: 5%; */
+    font-size: 64px;
+    font-weight: 700;
+    color: white;   
+    text-align: start;
+}
+
+ .why-participate-cards{
+    display: flex;
+    
+    align-items: center;
+    margin-top: 50px;
+   
+    width: 100%;
+    justify-content: space-between;
+}
+
+ .why-participate-cards .why-participate-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 420px;
+    min-height: 320px;
+    background-color: rgb(255, 255, 255,0.1);
+    border-radius: 16px;
+    
+    position: relative;
+}
+
+
+.why-participate-card .why-participate-card-icon {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    background-color: var(--accent-color);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 61px;
+    height: 61px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 1rem 2rem;
+    padding: 0.5rem;
+}
+
+.why-participate-card-icon span {
+    font-size: 40px;
+    color: black;
+}
+
+/* .why-participate-card p{
+    position: absolute;
+    top: 30%;
+    
+    font-size: 40px;
+    font-weight: 600; 
+    color: white;
+    text-align: start;
+    margin-top: 1rem;
+    line-height: 50px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    width: 90%;
+} */
+
+
+.why-participate-card .why-participate-card-content{
+   width: 100%;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+    
+}
+
+.why-participate-card-content p{
+    font-size: 2.5rem;
+    font-weight: 600; 
+    color: white;
+    text-align: start;
+    margin-top: 1rem;
+    line-height: 50px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    width: 80%;
+}
+
+@media screen and (min-width:1600px){
+
+
+    .why-participate-content{
+        display: flex;
+        padding-inline: 10%;
+        
+    }
+ .why-participate-cards{
+    display: flex;
+    
+    align-items: center;
+    margin-top: 50px;
+   
+    width: 100%;
+    justify-content: space-between;
+}
+
+   
+    
+    
+}
+@media screen and (max-width:1440px){
+    .why-participate-cards{
+    
+        justify-content: space-between;
+        gap: 1rem;
+        
+        
+    }
+    
+    .why-participate-cards .why-participate-card{
+        
+        
+        width: 340px;
+        min-height: 240px;
+        
+    }
+    
+    
+    .why-participate-card .why-participate-card-icon {
+        position: absolute;
+    
+        left: 0;
+        top: 0;
+        background-color: cyan;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 51px;
+        height: 51px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        margin: 1rem 1.2rem;
+    }
+    
+    .why-participate-card-icon span {
+        font-size: 40px;
+        color: black;
+    }
+    .why-participate-card-content p{
+        font-size:1.7rem;
+        line-height: 30px;
+        
+    }
+}
+
+
+@media screen and (max-width:1024px){
+    .why-participate-card .why-participate-card-icon {
+        position: absolute;
+    
+        left: 0;
+        top: 0;
+        background-color: cyan;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        margin: 1rem 1.2rem;
+        padding: 0.5rem;
+    }
+    .why-participate-card-icon span {
+        font-size: 30px;
+        color: black;
+    }
+    .why-participate-card-content p{
+        font-size:1.2rem;
+        
+        font-weight: 500; 
+        
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .why-participate-content h1{
+   
+        padding-left: 0;
+         
+        text-align: center;
+
+        font-size: 32px;
+        font-weight: 700;
+    }
+    
+    .why-participate-cards{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.5rem;
+        
+        
+    }
+    
+    .why-participate-cards .why-participate-card{
+        
+        
+        width: 310px;
+        min-height: 210px;
+        display: flex;
+        flex-direction: columns;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    .why-participate-card .why-participate-card-icon {
+        position: relative;
+        top: 0;
+        background-color: cyan;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        margin: 1rem 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .why-participate-card-content p{
+        font-size:20px;
+        
+        text-align: center;
+    }
+    
+}

@@ -12,6 +12,31 @@
   --primary-pink: #fc0ff5;
   --dark-blue: #0b1e3e;
   --aqua-green: #38fbdb;
+
+
+
+  /* colors */
+  --primary-color:#0C1E3E;
+  --secondary-color:#122C5A;
+  --accent-color:#38FBDB;
+  --secondary-accent-color:#FC0FF5;
+
+  /* Font sizes Desktop */
+ /*  --fontsizeH1:64px;
+  --fontsizeH2:40px;
+  --fontsizeH3:32px;
+  --fontsizeText1:18px;
+  --fontsizeText2:16px; */
+  --fontsizeH1:3rem;
+  --fontsizeH2:2rem;
+  --fontsizeH3:1.7rem;
+  --fontsizeText1:1.2rem;
+  --fontsizeText2:1rem;
+  /* Font sizes Mobiles */
+
+  --fontsizeH1Mobile:32px;
+  --fontsizeH2Mobile:24px;
+
 }
 * {
   margin: 0;
@@ -27,4 +52,9 @@ h2 {
 }
 p {
   font-family: 'Roboto', sans-serif;
+}
+
+body{
+
+  background-color: var(--primary-color);
 }
