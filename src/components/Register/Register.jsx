@@ -2,6 +2,8 @@
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
+import { Alert, Snackbar } from '@mui/material';
+import axios from 'axios';
 import './register.css';
 import { useState, useEffect } from 'react';
 import StepOne from '../Steps/StepOne/StepOne';
@@ -9,9 +11,81 @@ import StepTwo from '../Steps/StepTwo/StepTwo';
 import StepThree from '../Steps/StepThree/StepThree';
 import StepFour from '../Steps/StepFour/StepFour';
 
+const ApiUrl = import.meta.env.VITE_API_URL;
+
 export default function Register({ open, close }) {
   const [step, setStep] = useState(1);
+  const [errorMessage, setErrorMessage] = useState('');
   const [progressBarWidth, setprogressBarWidth] = useState(0);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    NationalCartId: '',
+    skills: [],
+    githubLink: '',
+    linkedinLink: '',
+    portfolioLink: '',
+    teamName: '',
+    participationCategory: '',
+    participatedBefore: false,
+  });
+
+  const handleSubmit = async () => {
+    console.log(formData); // You can keep this to see the data in the console
+
+    try {
+      const response = await axios.post(`${ApiUrl}`, formData, {
+        headers: {
+          'Content-Type': 'application/json', // Ensure correct content type for JSON
+        },
+      });
+
+      if (response.status === 201) {
+        console.log('Form data submitted successfully');
+        // Optionally, you can handle a success message or redirect here
+      } else {
+        setErrorMessage('An error occurred during the submission');
+      }
+    } catch (error) {
+      console.error(error);
+      setErrorMessage('An error occurred during the submission');
+    }
+
+    close(); // Close the modal after submission
+  };
+
+  const validateForm = (step) => {
+    if (step === 1) {
+      if (
+        formData.firstName === '' ||
+        formData.lastName === '' ||
+        formData.email === '' ||
+        formData.phone === '' ||
+        formData.NationalCartId === ''
+      ) {
+        setErrorMessage('Please enter all the fields');
+        return false;
+      }
+    } else if (step === 2) {
+      if (formData.skills.length == 0) {
+        setErrorMessage('Please select at least one Skill');
+        return false;
+      }
+    } else if (step === 3) {
+      if (formData.githubLink === '') {
+        setErrorMessage('Please enter at least your GitHub link');
+        return false;
+      }
+    } else if (step === 4) {
+      if (formData.teamName === '' || formData.participationCategory === '') {
+        setErrorMessage('Please enter at the team name and choose a role');
+        return false;
+      }
+    }
+    return true;
+  };
 
   useEffect(() => {
     if (step === 1) {
@@ -26,7 +100,11 @@ export default function Register({ open, close }) {
   }, [step]);
 
   const handleNext = () => {
-    setStep(step + 1);
+    if (validateForm(step)) {
+      if (step != 4) {
+        setStep(step + 1);
+      } else handleSubmit();
+    }
   };
 
   const handleBack = () => {
@@ -35,19 +113,36 @@ export default function Register({ open, close }) {
 
   const returnStep = () => {
     if (step === 1) {
-      return <StepOne />;
+      return <StepOne formData={formData} setFormData={setFormData} />;
     } else if (step === 2) {
-      return <StepTwo />;
+      return <StepTwo formData={formData} setFormData={setFormData} />;
     } else if (step === 3) {
-      return <StepThree />;
+      return <StepThree formData={formData} setFormData={setFormData} />;
     } else if (step === 4) {
-      return <StepFour />;
+      return <StepFour formData={formData} setFormData={setFormData} />;
     }
   };
 
   return (
     <Modal open={open} onClose={close} aria-labelledby="registration-title">
       <Box className="modal-container">
+        {errorMessage && (
+          <Snackbar
+            open={true}
+            autoHideDuration={3000}
+            anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+            onClose={() => setErrorMessage('')}
+          >
+            <Alert
+              onClose={() => setErrorMessage('')}
+              severity="error"
+              sx={{ width: '100%' }}
+            >
+              {errorMessage}
+            </Alert>
+          </Snackbar>
+        )}
+
         <div className="progress-bar">
           <div
             className={`progress-bar-fill active`}
@@ -92,11 +187,7 @@ export default function Register({ open, close }) {
           ) : (
             <div></div>
           )}
-          <Button
-            className="next-button"
-            onClick={handleNext}
-            disabled={step === 4}
-          >
+          <Button className="next-button" onClick={handleNext}>
             {step !== 4 ? 'Next' : 'Register'}
           </Button>
         </div>

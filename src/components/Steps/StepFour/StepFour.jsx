@@ -1,46 +1,52 @@
-import { useState } from 'react';
-import TextField from '@mui/material/TextField';
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import { Checkbox } from '@mui/material';
+/* eslint-disable react/prop-types */
+import {
+  TextField,
+  Radio,
+  RadioGroup,
+  FormControlLabel,
+  Checkbox,
+} from '@mui/material';
 import './StepFour.css';
-const StepFour = () => {
-  const [value, setValue] = useState('frontend developer');
 
-  const handleChange = (event) => {
-    setValue(event.target.value);
+const StepFour = ({ formData, setFormData }) => {
+  const handleChange = (e, isCheckBox = false) => {
+    const { name, value, checked } = e.target;
+    console.log(name, value, checked);
+
+    setFormData({
+      ...formData,
+      [name]: isCheckBox && name !== 'participationCategory' ? checked : value,
+    });
   };
+
   return (
     <div className="form-section">
-      <h2 className="section-title">Professional information</h2>
+      <h2 className="section-title">Professional Information</h2>
 
       <h3 className="label">Team Name*</h3>
-
       <TextField
         fullWidth
         placeholder="Team Name"
         className="input-field"
         variant="outlined"
+        name="teamName"
+        value={formData.teamName || ''}
+        onChange={handleChange}
       />
+
       <h3 className="label">Your Team Role</h3>
       <RadioGroup
         row
         aria-labelledby="demo-controlled-radio-buttons-group"
-        name="controlled-radio-buttons-group"
-        value={value}
+        name="participationCategory"
+        value={formData.participationCategory || ''}
         onChange={handleChange}
       >
         <FormControlLabel
           value="frontend developer"
           control={
             <Radio
-              sx={{
-                color: 'white',
-                '&.Mui-checked': {
-                  color: '#00ffd1',
-                },
-              }}
+              sx={{ color: 'white', '&.Mui-checked': { color: '#00ffd1' } }}
             />
           }
           label="Frontend Developer"
@@ -49,12 +55,7 @@ const StepFour = () => {
           value="backend developer"
           control={
             <Radio
-              sx={{
-                color: 'white',
-                '&.Mui-checked': {
-                  color: '#00ffd1',
-                },
-              }}
+              sx={{ color: 'white', '&.Mui-checked': { color: '#00ffd1' } }}
             />
           }
           label="Backend Developer"
@@ -63,12 +64,7 @@ const StepFour = () => {
           value="fullstack developer"
           control={
             <Radio
-              sx={{
-                color: 'white',
-                '&.Mui-checked': {
-                  color: '#00ffd1',
-                },
-              }}
+              sx={{ color: 'white', '&.Mui-checked': { color: '#00ffd1' } }}
             />
           }
           label="Fullstack Developer"
@@ -77,12 +73,7 @@ const StepFour = () => {
           value="mobile developer"
           control={
             <Radio
-              sx={{
-                color: 'white',
-                '&.Mui-checked': {
-                  color: '#00ffd1',
-                },
-              }}
+              sx={{ color: 'white', '&.Mui-checked': { color: '#00ffd1' } }}
             />
           }
           label="Mobile Developer"
@@ -91,45 +82,33 @@ const StepFour = () => {
           value="ai developer"
           control={
             <Radio
-              sx={{
-                color: 'white',
-                '&.Mui-checked': {
-                  color: '#00ffd1',
-                },
-              }}
+              sx={{ color: 'white', '&.Mui-checked': { color: '#00ffd1' } }}
             />
           }
           label="AI Developer"
         />
-
         <FormControlLabel
           value="designer"
           control={
             <Radio
-              sx={{
-                color: 'white',
-                '&.Mui-checked': {
-                  color: '#00ffd1',
-                },
-              }}
+              sx={{ color: 'white', '&.Mui-checked': { color: '#00ffd1' } }}
             />
           }
           label="Designer"
         />
       </RadioGroup>
+
       <h3 className="label">Have you participated in a Hackathon Before?</h3>
       <FormControlLabel
         control={
           <Checkbox
-            sx={{
-              color: 'white',
-              '&.Mui-checked': {
-                color: '#00ffd1',
-              },
-            }}
+            name="participatedBefore"
+            checked={formData.participatedBefore || false}
+            sx={{ color: 'white', '&.Mui-checked': { color: '#00ffd1' } }}
+            onChange={(e) => handleChange(e, true)}
           />
         }
-        label="Yes i have participated in a hackathon previously"
+        label="Yes, I have participated in a hackathon previously"
       />
     </div>
   );

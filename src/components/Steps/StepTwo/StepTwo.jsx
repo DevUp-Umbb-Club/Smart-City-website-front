@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { Chip, Avatar } from '@mui/material';
 import './StepTwo.css';
 
-const StepTwo = () => {
-  const [selectedSkills, setSelectedSkills] = useState([]);
+const StepTwo = ({ formData, setFormData }) => {
+  const [selectedSkills, setSelectedSkills] = useState(formData.skills);
 
   const skills = {
     Frontend: [
@@ -154,12 +155,12 @@ const StepTwo = () => {
     ],
   };
 
-  const toggleSkill = (skillName) => {
-    setSelectedSkills((prev) =>
-      prev.includes(skillName)
-        ? prev.filter((s) => s !== skillName)
-        : [...prev, skillName]
-    );
+  const toggleSkill = (skill) => {
+    const newSelectedSkills = selectedSkills.includes(skill)
+      ? selectedSkills.filter((s) => s !== skill)
+      : [...selectedSkills, skill];
+    setSelectedSkills(newSelectedSkills);
+    setFormData({ ...formData, skills: newSelectedSkills });
   };
 
   return (
