@@ -9,7 +9,7 @@
 
 .moreabout-content {
     display: flex;
-    padding-inline: 10%; /* Similar to .why-participate */
+    padding-inline: 10%; 
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
@@ -93,6 +93,7 @@
     .moreabout-cards {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
+        
     }
 }
 
@@ -110,6 +111,7 @@
         text-align: center;
         font-size: 32px;
         font-weight: 700;
+        
     }
     .moreabout-content p {
         font-size: 32px;  

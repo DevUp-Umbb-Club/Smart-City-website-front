@@ -8,12 +8,7 @@ import './Landing.css';
 const Landing = () => {
   return (
     <div>
-      <Navbar />
-      <MoreAbout />
-      <WhyParticipate />
-      <Judges />
-      <StilhaveAQuestion />
-      <CountDown />
+      
     </div>
   );
 };
