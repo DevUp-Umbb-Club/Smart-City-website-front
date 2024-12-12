@@ -10,8 +10,7 @@ import Footer from '../../components/Footer/Footer';
 import './Landing.css';
 import Sponsor from '../../components/Sponsor/Sponsor';
 import Schedule from '../../components/Schedule/Schedule';
-import Judges from '../../components/Judges/Judges';
-import MoreAbout from '../../components/MoreAbout/MoreAbout';
+
 import HeroSection from '../../components/HeroSection/HeroSection';
 const Landing = () => {
   return (
