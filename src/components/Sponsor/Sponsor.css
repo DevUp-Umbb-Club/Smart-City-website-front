@@ -1,0 +1,50 @@
+.sponsor-section {
+  width: 100%;
+  padding-inline: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.sponsor-section h2 {
+  color: white;
+  font-size: 38px;
+}
+
+.sponsor-section div {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  padding-block: 30px;
+  padding-inline: 5%;
+  background: rgba(29, 54, 97, 0.4);
+  border-radius: 16px;
+}
+
+.sponsor-section img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+
+.sponsor-section p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 29px;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .sponsor-section div {
+    flex-direction: column;
+    height: auto;
+  }
+  .sponsor-section p {
+    font-size: 20px;
+    text-align: center;
+  }
+}

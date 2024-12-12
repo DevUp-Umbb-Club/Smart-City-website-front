@@ -13,20 +13,23 @@ import MoreAbout from '../../components/MoreAbout/MoreAbout';
 import HeroSection from '../../components/HeroSection/HeroSection';
 const Landing = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <HeroSection />
-      <CountDown />
-      <MoreAbout />
-      <WhyParticipate />
-      <Judges />
-      <Schedule />
-      <Faq />
-      <Sponsor />
-      <FindUs />
-      <StilhaveAQuestion />
+      <main>
+        <HeroSection />
+        <CountDown />
+        <MoreAbout />
+        <WhyParticipate />
+        <Judges />
+        <Schedule />
+        <Faq />
+        <Sponsor />
+        <FindUs />
+        <StilhaveAQuestion />
+      </main>
+
       <Footer />
-    </div>
+    </>
   );
 };
 

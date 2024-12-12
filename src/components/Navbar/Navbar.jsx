@@ -4,14 +4,23 @@ import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import Register from '../Register/Register';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
+  };
+
+  const handleRegisterClick = () => {
+    setIsModalOpen(true);
+  };
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   const handleClickOutside = (e) => {
@@ -48,70 +57,73 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav ref={menuRef}>
-      <Link to="/">
-        <img src={logo} alt="BSC Logo" />
-      </Link>
+    <>
+      <Register open={isModalOpen} close={handleCloseModal} />
+      <nav ref={menuRef}>
+        <Link to="/">
+          <img src={logo} alt="BSC Logo" />
+        </Link>
 
-      <span onClick={toggleMenu}>
-        <RxHamburgerMenu color="white" size={25} />
-      </span>
+        <span onClick={toggleMenu}>
+          <RxHamburgerMenu color="white" size={25} />
+        </span>
 
-      <ul className={` ${isMenuOpen && 'open'}`}>
-        <li>
-          <HashLink
-            smooth
-            to="/"
-            className={activeSection === 'home' && 'active'}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Home
-          </HashLink>
-        </li>
-        <li>
-          <HashLink
-            smooth
-            to="#about"
-            className={activeSection === 'about' && 'active'}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            About
-          </HashLink>
-        </li>
-        <li>
-          <HashLink
-            smooth
-            to="#judges"
-            className={activeSection === 'judges' && 'active'}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Judges
-          </HashLink>
-        </li>
-        <li>
-          <HashLink
-            smooth
-            to="#agenda"
-            className={activeSection === 'agenda' && 'active'}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Agenda
-          </HashLink>
-        </li>
-        <li>
-          <HashLink
-            smooth
-            to="#faq"
-            className={activeSection === 'faq' && 'active'}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            FAQ
-          </HashLink>
-        </li>
-      </ul>
+        <ul className={` ${isMenuOpen && 'open'}`}>
+          <li>
+            <HashLink
+              smooth
+              to="/"
+              className={activeSection === 'home' && 'active'}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </HashLink>
+          </li>
+          <li>
+            <HashLink
+              smooth
+              to="#about"
+              className={activeSection === 'about' && 'active'}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </HashLink>
+          </li>
+          <li>
+            <HashLink
+              smooth
+              to="#judges"
+              className={activeSection === 'judges' && 'active'}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Judges
+            </HashLink>
+          </li>
+          <li>
+            <HashLink
+              smooth
+              to="#agenda"
+              className={activeSection === 'agenda' && 'active'}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Agenda
+            </HashLink>
+          </li>
+          <li>
+            <HashLink
+              smooth
+              to="#faq"
+              className={activeSection === 'faq' && 'active'}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              FAQ
+            </HashLink>
+          </li>
+        </ul>
 
-      <button>Apply now</button>
-    </nav>
+        <button onClick={handleRegisterClick}>Apply now</button>
+      </nav>
+    </>
   );
 };
 
