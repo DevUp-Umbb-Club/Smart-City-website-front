@@ -7,10 +7,25 @@ import WhyParticipate from '../../components/WhyParticipate/WhyParticipate';
 import './Landing.css';
 const Landing = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <HeroSection />
+        <CountDown />
+        <MoreAbout />
+        <WhyParticipate />
+        <Judges />
+        <Schedule />
+        <Faq />
+        <Sponsor />
+        <FindUs />
+        <StilhaveAQuestion />
+      </main>
+      <Footer />
+    </>
   );
 };
 
 export default Landing;
+
+
