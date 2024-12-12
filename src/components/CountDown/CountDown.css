@@ -14,8 +14,8 @@
 }
 
 .countdown-content h2{
-    font-size: 64px;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: bold;
     color: white;
 }
 
@@ -58,8 +58,7 @@
         /* flex-direction: column; */
     }
     .countdown-content h2{
-        font-size: 32px;
-       font-weight: 700;
+        
        text-align: center;
     }
 

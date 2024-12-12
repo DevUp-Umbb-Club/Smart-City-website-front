@@ -1,7 +1,7 @@
 /* Update for .moreabout section */
 .moreabout {
     margin: 0;
-    margin-top: 10rem;
+    
     padding: 1rem;
     width: 100%;
     height: 100%;
@@ -9,7 +9,7 @@
 
 .moreabout-content {
     display: flex;
-    padding-inline: 10%; 
+    padding-inline: 3%; 
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
@@ -25,18 +25,18 @@
     z-index: -100;
 }
 .moreabout-content h2 {
-    font-size: 64px;
-    font-weight: 700;
-    color: white;   
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
     text-align: start;
 }
 
 .moreabout-content p {
-    font-size: 32px;  
+    font-size: 1.2rem;
         font-family: 500;
     color: white;   
     text-align: start;
-    width: 70%;
+    width: 90%;
     line-height: 36px;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .moreabout-card-content p {
-    font-size: 32px;
+    font-size: 1.7rem;
     font-weight: 500;
     color: white;
     text-align: start;
@@ -94,7 +94,13 @@
     margin: 0;
     width: 90%;
 }
-
+@media screen and (min-width: 1440px) {
+    .moreabout-content {
+        
+        padding-inline: 10%; 
+        
+    }
+}
 
 @media screen and (max-width: 1440px) {
     .moreabout-cards {
@@ -116,13 +122,11 @@
     }
     .moreabout-content h2 {
         text-align: center;
-        font-size: 32px;
-        font-weight: 700;
+        
         
     }
     .moreabout-content p {
-        font-size: 32px;  
-        font-family: 500;
+        
         text-align: center;
     }
     .moreabout-cards {
