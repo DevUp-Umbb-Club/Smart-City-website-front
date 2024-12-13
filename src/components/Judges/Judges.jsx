@@ -42,7 +42,11 @@ const Judges = () => {
             </div>
             <div className="judges-card-content">
               <p>
-              co lead gdg ensia 4th year IA Student at Ensia
+              Native android/Desktop developer
+              <br />
+              First year master student in software engineering and information processing
+
+             
               </p>
             </div>
           </div>
@@ -61,6 +65,8 @@ const Judges = () => {
             </div>
           </div>
 
+         
+
 
           <div className="judges-card">
             <div className="judges-card-header">
@@ -70,9 +76,11 @@ const Judges = () => {
             </div>
             <div className="judges-card-content">
               <p>
-                Merouane Kanoune, a Full Stack Software Engineer and Tech Lead
-                with over 4 years of experience. Leading the development of ALID
-                and O’KLA
+                Full stack mern developer 
+                <br />
+                First year master student in software engineering 
+                <br />
+                Instructor at code213
               </p>
             </div>
           </div>
@@ -85,7 +93,7 @@ const Judges = () => {
             </div>
             <div className="judges-card-content">
               <p>
-              full stack mern developer,
+              Full stack mern developer,
               <br />
                 First year master student in software engineering, 
                 <br />
@@ -109,15 +117,14 @@ const Judges = () => {
             </div>
             <div className="judges-card-content">
               <p>
-              co lead gdg ensia 4th year IA Student at Ensia
+              Full stack developer 
+              <br />
+                First year master student in software engineering and information processing
+                <br />
+                Web dev freelancer
               </p>
             </div>
           </div>
-
-
-
-          
-
 
 
           <div className="judges-card">
@@ -128,10 +135,17 @@ const Judges = () => {
             </div>
             <div className="judges-card-content">
               <p>
-              co lead gdg ensia 4th year IA Student at Ensia
+                Full stack and Ai developer
+                <br />
+              First year master student in software engineering and information processing
               </p>
             </div>
           </div>
+          
+
+
+
+         
         </div>
       </div>
     </section>
