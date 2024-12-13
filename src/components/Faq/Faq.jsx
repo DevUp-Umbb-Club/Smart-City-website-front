@@ -9,21 +9,21 @@ const Faq = () => {
     {
       question: 'What is BSC?',
       answer:
-        'No experience is necessary! We provide training and mentorship to help you grow',
+        'It is the first hackathon organized by DevUp in Boumerdes,its goal is to find solutions to make our beloved city a better and smarter one!',
     },
     {
-      question: 'Q2',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-      question: 'Q3',
+      question: 'Do i need experience to participate?',
       answer:
-        'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'No experience is necessary! Only skills! We provide  mentorship to help you grow',
     },
     {
-      question: 'Q4',
+      question: 'I need to form a team of how many members?',
+      answer: 'Each team should have 4 members,not more and not less',
+    },
+    {
+      question: 'Is food and place to sleep offered by the organizers?',
       answer:
-        'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+        "Yes,just come with your computer,charger and don't forget your knowledge!.",
     },
   ];
 
