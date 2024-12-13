@@ -29,7 +29,7 @@ const FindUs = () => {
           </div>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7728.950781552489!2d3.4380449017996693!3d36.76159384491185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e69b40975d599%3A0xd161c31776388e89!2z2YXYrtmK2YUg2LTYqNin2Kgg2LTZh9mK2K8g2YXYrdmF2K8g2KjZiNi02YTYp9i62YU!5e0!3m2!1sfr!2sdz!4v1734010580073!5m2!1sfr!2sdz"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.265893085066!2d3.4503255000000004!3d36.7641883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e69e5f4fd2e9b%3A0x552f63a98855aa57!2sAuberge%20corso%20boumerdes!5e0!3m2!1sen!2sdz!4v1734088813225!5m2!1sen!2sdz"
           width="600"
           height="450"
           style={{ border: 0 }}

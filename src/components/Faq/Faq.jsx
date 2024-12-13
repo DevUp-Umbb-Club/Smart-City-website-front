@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
-import './faq.css';
+import './Faq.css';
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
