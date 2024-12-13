@@ -6,4 +6,5 @@ main {
   flex-direction: column;
   gap: 150px;
   overflow-x: hidden;
+  overflow: hidden;
 }
