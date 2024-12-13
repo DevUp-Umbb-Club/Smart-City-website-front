@@ -92,6 +92,24 @@
   top: 7%;
   right: 3%;
 }
+
+
+
+@media screen and (min-width: 1500px) {
+  .hero-section .logo-hero {
+    right: 15%;
+    
+  }
+  
+}
+
+@media screen and (min-width: 1800px) {
+  .hero-section .logo-hero {
+    right: 13%;
+    
+  }
+  
+}
 @media screen and (max-width: 1024px) {
   .hero-section .logo-hero {
     top: 20%;
