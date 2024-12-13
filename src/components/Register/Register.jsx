@@ -11,6 +11,8 @@ import StepTwo from '../Steps/StepTwo/StepTwo';
 import StepThree from '../Steps/StepThree/StepThree';
 import StepFour from '../Steps/StepFour/StepFour';
 import RegisterSuccess from '../RegisterSuccess/RegisterSuccess';
+import isValidEmail from '../../utils/email';
+import isValidNationalId from '../../utils/nationalId';
 
 const ApiUrl = import.meta.env.VITE_API_URL;
 
@@ -68,6 +70,12 @@ export default function Register({ open, close }) {
         formData.NationalCartId === ''
       ) {
         setErrorMessage('Please enter all the fields');
+        return false;
+      } else if (!isValidEmail(formData.email)) {
+        setErrorMessage('Invalid email address');
+        return false;
+      } else if (!isValidNationalId(formData.NationalCartId)) {
+        setErrorMessage('Invalid National ID,must contain only numbers');
         return false;
       }
     } else if (step === 2) {
