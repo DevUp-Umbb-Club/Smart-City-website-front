@@ -32,7 +32,7 @@ const CountDown = () => {
         };
 
         const updateDOM = () => {
-            document.querySelector('.days span').textContent = timeLeftRef.current.days;
+            document.querySelector('.days2 span').textContent = timeLeftRef.current.days;
             document.querySelector('.hours span').textContent = timeLeftRef.current.hours;
             document.querySelector('.minutes span').textContent = timeLeftRef.current.minutes;
             document.querySelector('.seconds span').textContent = timeLeftRef.current.seconds;
@@ -48,7 +48,7 @@ const CountDown = () => {
             <div className='countdown-content'>
                 <h2>Registration closes in</h2>
                 <div className='countdown-timer'>
-                    <div className='countdown-box days'>
+                    <div className='countdown-box days2'>
                         <span>0</span>
                         <p>Day</p>
                     </div>

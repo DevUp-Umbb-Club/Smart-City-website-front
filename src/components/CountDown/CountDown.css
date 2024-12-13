@@ -1,6 +1,6 @@
 .countdown{
 
-   margin-top: 10rem;
+   
    height: 100%;
    width: 100%;
 }
@@ -54,24 +54,35 @@
 
 
 @media screen and (max-width:768px){
-    .countdown-content .countdown-timer{
-        /* flex-direction: column; */
-    }
-    .countdown-content h2{
-        
-       text-align: center;
-    }
+   .countdown-timer .countdown-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
 
-    .countdown-box span{
+.countdown-box span{
 
-        font-size: 60px;
-        
-    }
-    .countdown-box p{
-        color: var(--secondary-accent-color);
+    font-size: 80px;
     
-        font-size: 22px;
-    }
+}
+.countdown-box p{
+    color: var(--secondary-accent-color);
+
+    font-size: 32px;
+}
+
+
+    
+.countdown-content .countdown-timer{
+   
+    gap: 0.7rem;
+   
+}
+
     
 }
 
