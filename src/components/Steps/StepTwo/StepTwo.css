@@ -1,0 +1,10 @@
+.chip-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.css-1su80sj-MuiAvatar-img {
+  object-fit: contain !important;
+}
