@@ -23,7 +23,8 @@ const FindUs = () => {
             <div className="text-info">
               <h3>Phone</h3>
               <p>Call us for inquiries</p>
-              <a href="tel:+213 773 66 21 25">+213 773 66 21 25</a>
+              <a href="tel:+213 794 51 59 34">+213 794 51 59 34</a>
+              <a href="tel:+213 657 91 89 73">+213 657 91 89 73</a>
             </div>
           </div>
         </div>
