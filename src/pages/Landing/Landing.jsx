@@ -15,10 +15,18 @@ import Schedule from '../../components/Schedule/Schedule';
 import HeroSection from '../../components/HeroSection/HeroSection';
 const Landing = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const [activeSection, setActiveSection] = useState('home');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <Navbar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+      <Navbar
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        activeSection={activeSection}
+        setActiveSection={setActiveSection}
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+      />
       <main>
         <HeroSection setIsModalOpen={setIsModalOpen} />
         <CountDown />
@@ -32,7 +40,11 @@ const Landing = () => {
         <StilhaveAQuestion />
       </main>
 
-      <Footer setIsModalOpen={setIsModalOpen} />
+      <Footer
+        setIsModalOpen={setIsModalOpen}
+        activeSection={activeSection}
+        setIsMenuOpen={setIsMenuOpen}
+      />
     </>
   );
 };

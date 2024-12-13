@@ -3,13 +3,18 @@ import './Navbar.css';
 import logo from '../../assets/BSC.svg';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import Register from '../Register/Register';
 
-const Navbar = ({ isModalOpen, setIsModalOpen }) => {
-  const [activeSection, setActiveSection] = useState('home');
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Navbar = ({
+  isModalOpen,
+  setIsModalOpen,
+  activeSection,
+  setActiveSection,
+  isMenuOpen,
+  setIsMenuOpen,
+}) => {
   const menuRef = useRef(null);
 
   const toggleMenu = () => {
