@@ -55,12 +55,12 @@ const Judges = () => {
           <div className="judges-card">
             <div className="judges-card-header">
               <img src={bendimohammed} alt="judge" />
-              <h4>bendi mohammed Abbderraouf </h4>
+              <h4>Bendi Mohammed Abbderraouf </h4>
               <span>Mentor</span>
             </div>
             <div className="judges-card-content">
               <p>
-              co lead gdg ensia 4th year IA Student at Ensia
+              Co lead GDG on Campus 4th year IA Student at ENSIA
               </p>
             </div>
           </div>
@@ -93,22 +93,14 @@ const Judges = () => {
             </div>
             <div className="judges-card-content">
               <p>
-              Full stack mern developer,
+              Full Stack MERN Developer
               <br />
-                First year master student in software engineering, 
+                First Year Master Student in Software Engineering
                 <br />
                 Front end developer at yourIT departement
               </p>
             </div>
           </div>
-
-          
-
-          
-
-
-
-
           <div className="judges-card">
             <div className="judges-card-header">
               <img src={mechkakhocine} alt="judge" />
