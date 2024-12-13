@@ -1,12 +1,11 @@
 import { MdOutlineEmail, MdLocalPhone } from 'react-icons/md';
 import './FindUs.css';
 
-
-import findushereImage from '../../assets/findushere.png'
+import findushereImage from '../../assets/findushere.png';
 const FindUs = () => {
   return (
     <section className="find-us-section">
-      <img src={findushereImage} id='findushereimage' />
+      <img src={findushereImage} id="findushereimage" />
       <h2>Find Us Here</h2>
       <div className="container">
         <div className="texts">
@@ -15,7 +14,12 @@ const FindUs = () => {
             <div className="text-info">
               <h3>Email</h3>
               <p>Reach us anytime</p>
-              <a href="mailto:info@example.com">info@example.com</a>{' '}
+              <a
+                href="mailto:devupclubumbb@gmail.com
+"
+              >
+                devupclubumbb@gmail.com
+              </a>{' '}
             </div>
           </div>
           <div className="info">
