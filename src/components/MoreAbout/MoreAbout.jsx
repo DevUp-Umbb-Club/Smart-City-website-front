@@ -16,8 +16,7 @@ const MoreAbout = () => {
         <img id="moreaboutimage" src={moreaboutImage} />
         <h2>More About BSC</h2>
         <p>
-          Join us for an exciting three-day onsite event, running from [insert
-          date]. During this time, participants will work intensively to develop
+          Join us for an exciting three-day onsite event, running from 19th december. During this time, participants will work intensively to develop
           innovative solutions to a real-world challenge.
         </p>
 
