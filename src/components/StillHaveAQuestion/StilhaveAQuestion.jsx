@@ -17,29 +17,34 @@ const StilhaveAQuestion = () => {
             <p id='contentquestion'>Contact Us</p>
 
             <div className='still-have-a-question-cards'>
+                <a href="https://www.instagram.com/devup.umbb/ ">
                 <div className='still-have-a-question-card'>
                 <div className='still-have-a-question-card-icon'>
                     <img src={instgramLogo} alt='instagram' />
                     </div>
                     <p>Instagram</p>
                 </div>
-
+                </a>
                 <div className='still-have-a-question-card'>
-                <div className='still-have-a-question-card-icon'>
+                    <a href="https://www.instagram.com/devup.umbb/">
+                  <div className='still-have-a-question-card-icon'>
                     <span>
                     <img src={facebookLogo} alt='instagram' />
                     </span>
                     </div>
                     <p>Facebook</p>
+                    </a>
                 </div>
 
-                <div className='still-have-a-question-card'>
+                <div className='still-have-a-question-card' >
+                    <a href="https://www.linkedin.com/company/devupumbb " >
                     <div className='still-have-a-question-card-icon'>
                     <span>
                     <img src={linkedinLogo} alt='instagram' />
                     </span>
                     </div>
                     <p>Linkedin</p>
+                    </a>
                 </div>
             </div>
 
