@@ -15,7 +15,6 @@
   overflow-x: hidden;
   overflow: visible;
   position: relative;
-  
 }
 
 .hero-section #herosectionimage {
@@ -110,22 +109,29 @@
   right: 3%;
 }
 
-
-
 @media screen and (min-width: 1500px) {
   .hero-section .logo-hero {
     right: 15%;
-    
   }
-  
 }
 
 @media screen and (min-width: 1800px) {
   .hero-section .logo-hero {
     right: 13%;
-    
   }
-  
+}
+
+@media screen and (max-width: 1324px) {
+  .hero-section .logo-hero {
+    top: 20%;
+    right: 5%;
+  }
+  .hero-section .stars-hero {
+    position: absolute;
+    width: 650px;
+    top: 0%;
+    right: -8%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .hero-section .logo-hero {
