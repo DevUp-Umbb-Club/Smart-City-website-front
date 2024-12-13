@@ -101,7 +101,7 @@ const Navbar = ({
               className={activeSection === 'judges' && 'active'}
               onClick={() => setIsMenuOpen(false)}
             >
-              Judges
+              Mentors
             </HashLink>
           </li>
           <li>
