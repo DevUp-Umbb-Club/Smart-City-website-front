@@ -5,6 +5,7 @@ import './HeroSection.css';
 
 import herosectionImage from '../../assets/herosection.png'
 const HeroSection = ({ setIsModalOpen }) => {
+  
   return (
     <section className="hero-section" id="home">
 
