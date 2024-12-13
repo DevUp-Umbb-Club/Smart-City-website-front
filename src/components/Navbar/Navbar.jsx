@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './Navbar.css';
 import logo from '../../assets/BSC.svg';
 import { HashLink } from 'react-router-hash-link';
@@ -6,10 +7,9 @@ import { useState, useEffect, useRef } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import Register from '../Register/Register';
 
-const Navbar = () => {
+const Navbar = ({ isModalOpen, setIsModalOpen }) => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const menuRef = useRef(null);
 
   const toggleMenu = () => {
@@ -72,7 +72,7 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to="/"
+              to="/#home"
               className={activeSection === 'home' && 'active'}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -82,7 +82,7 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to="#about"
+              to="/#about"
               className={activeSection === 'about' && 'active'}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -92,7 +92,7 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to="#judges"
+              to="/#judges"
               className={activeSection === 'judges' && 'active'}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -102,7 +102,7 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to="#agenda"
+              to="/#agenda"
               className={activeSection === 'agenda' && 'active'}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -112,7 +112,7 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to="#faq"
+              to="/#faq"
               className={activeSection === 'faq' && 'active'}
               onClick={() => setIsMenuOpen(false)}
             >
