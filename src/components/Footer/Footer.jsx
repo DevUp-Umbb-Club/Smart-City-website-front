@@ -18,7 +18,12 @@ const Footer = () => {
     else if(goto==='linkedin'){
       window.location.href='https://www.linkedin.com/company/devupumbb'
     }
-  }
+    else if(goto==='location'){
+
+      window.location.href="https://maps.app.goo.gl/kBpgf8zBCQqiZNJ8A"
+    }
+
+    }
   return (
     <footer className='footer'>
       <div className='footer-content'>
@@ -36,9 +41,11 @@ const Footer = () => {
             <a href='#'>Sponsor</a>
             <a href='#'>FAQ</a>
           </div>
-          <div className='footer-content-top-location'>
+          <div className='footer-content-top-location' onClick={()=>{
+            handleLink('location')
+          }}>
             <i className='location-icon'><FaLocationDot /></i>
-            <a href='#'>Auberge corso boumerdes</a>
+            <a href="https://maps.app.goo.gl/kBpgf8zBCQqiZNJ8A">Auberge corso boumerdes</a>
           </div>
         </div>
         <div className='footer-content-line'></div>
