@@ -8,7 +8,7 @@ const HeroSection = ({ setIsModalOpen }) => {
   return (
     <section className="hero-section" id="home">
 
-      <img src={herosectionImage} id='herosectionimage' />
+      {/* <img src={herosectionImage} id='herosectionimage' /> */}
       <h3>Boumerdes Smart City</h3>
       <h2>Hackathon</h2>
       <h4>Code For The City</h4>
