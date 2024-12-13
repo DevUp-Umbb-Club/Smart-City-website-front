@@ -3,7 +3,7 @@ import stars from '../../assets/stars-home.png';
 import './HeroSection.css';
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="home">
       <h3>Boumerdes Smart City</h3>
       <h2>Hackathon</h2>
       <h4>Code For The City</h4>

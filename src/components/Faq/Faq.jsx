@@ -32,7 +32,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="faq-container">
+    <section className="faq-container" id="faq">
       <h2 className="faq-title">FAQs</h2>
       <div className="faq-list">
         {faqItems.map((item, index) => (
@@ -55,7 +55,7 @@ const Faq = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

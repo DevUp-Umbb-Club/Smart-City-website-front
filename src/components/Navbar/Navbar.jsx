@@ -72,7 +72,7 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to="/"
+              to="/#home"
               className={activeSection === 'home' && 'active'}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -82,7 +82,7 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to="#about"
+              to="/#about"
               className={activeSection === 'about' && 'active'}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -92,7 +92,7 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to="#judges"
+              to="/#judges"
               className={activeSection === 'judges' && 'active'}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -102,7 +102,7 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to="#agenda"
+              to="/#agenda"
               className={activeSection === 'agenda' && 'active'}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -112,7 +112,7 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to="#faq"
+              to="/#faq"
               className={activeSection === 'faq' && 'active'}
               onClick={() => setIsMenuOpen(false)}
             >
