@@ -11,6 +11,19 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 10px;
+
+  overflow-x: hidden;
+  overflow: visible;
+  position: relative;
+  z-index: -5;
+}
+
+.hero-section #herosectionimage {
+  object-fit: cover;
+  position: absolute;
+  left: -10%;
+  top: 20px;
+  z-index: -2;
 }
 
 .hero-section h3 {
@@ -20,6 +33,7 @@
   font-size: 28px;
   line-height: 42px;
   color: #38fbdb;
+
 }
 
 .hero-section h2 {
@@ -91,6 +105,24 @@
   width: 750px;
   top: 7%;
   right: 3%;
+}
+
+
+
+@media screen and (min-width: 1500px) {
+  .hero-section .logo-hero {
+    right: 15%;
+    
+  }
+  
+}
+
+@media screen and (min-width: 1800px) {
+  .hero-section .logo-hero {
+    right: 13%;
+    
+  }
+  
 }
 @media screen and (max-width: 1024px) {
   .hero-section .logo-hero {
