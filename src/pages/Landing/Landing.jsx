@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import CountDown from '../../components/CountDown/CountDown';
 import Judges from '../../components/Judges/Judges';
 import MoreAbout from '../../components/MoreAbout/MoreAbout';
@@ -13,11 +14,13 @@ import Schedule from '../../components/Schedule/Schedule';
 
 import HeroSection from '../../components/HeroSection/HeroSection';
 const Landing = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
-      <Navbar />
+      <Navbar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       <main>
-        <HeroSection />
+        <HeroSection setIsModalOpen={setIsModalOpen} />
         <CountDown />
         <MoreAbout />
         <WhyParticipate />
@@ -29,7 +32,7 @@ const Landing = () => {
         <StilhaveAQuestion />
       </main>
 
-      <Footer />
+      <Footer setIsModalOpen={setIsModalOpen} />
     </>
   );
 };
