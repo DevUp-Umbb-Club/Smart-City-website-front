@@ -113,6 +113,11 @@
   .hero-section .logo-hero {
     right: 15%;
   }
+  .hero-section .stars-hero {
+   
+    top: 0;
+  
+  }
 }
 
 @media screen and (min-width: 1800px) {
