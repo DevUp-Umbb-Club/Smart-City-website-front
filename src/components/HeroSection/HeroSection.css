@@ -22,7 +22,7 @@
   object-fit: cover;
   position: absolute;
   left: -10%;
-  top: 20px;
+  top: -10px;
   z-index: -2;
 }
 
