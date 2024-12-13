@@ -5,7 +5,7 @@ import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import { Alert, CircularProgress, Snackbar } from '@mui/material';
 import axios from 'axios';
-import './register.css';
+import './Register.css';
 import StepOne from '../Steps/StepOne/StepOne';
 import StepTwo from '../Steps/StepTwo/StepTwo';
 import StepThree from '../Steps/StepThree/StepThree';
