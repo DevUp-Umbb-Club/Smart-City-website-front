@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 .card {
   background-color: #172a45;
@@ -203,42 +204,53 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: -100%;
+    width: 100%;
   }
   .card {
-    background-color: #172a45;
     border-radius: 10px;
     padding: 20px;
     max-width: 300px;
     color: white;
     text-align: left;
     width: 100%;
-    height: auto;
-    overflow-y: auto;
+    height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  }
+  .firstside{
+    margin-left: 0;
+  
+  }
+  .timeline{
+    background-color: #172a45;
   }
 }
 
 @media (max-width: 400px) {
   .button {
-    width: 10%;
+    width: auto; 
+    padding: 10px 30px; 
     display: flex;
-    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
   }
-  .buttons{
+  .buttons {
+   
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
     margin: auto;
     margin-top: 4%;
+    width: 50%;
   }
-  .total{
+  .total {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: center;
     margin: auto;
   }
- 
 }
