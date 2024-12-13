@@ -1,8 +1,12 @@
 import { MdOutlineEmail, MdLocalPhone } from 'react-icons/md';
 import './FindUs.css';
+
+
+import findushereImage from '../../assets/findushere.png'
 const FindUs = () => {
   return (
     <section className="find-us-section">
+      <img src={findushereImage} id='findushereimage' />
       <h2>Find Us Here</h2>
       <div className="container">
         <div className="texts">

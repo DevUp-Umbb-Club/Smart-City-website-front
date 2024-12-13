@@ -27,8 +27,8 @@
 .why-participate-content h2{
    
    /*  padding-left: 5%; */
-    font-size: 64px;
-    font-weight: 700;
+   font-size: 2.5rem;
+   font-weight: bold;
     color: white;   
     text-align: start;
 }
@@ -105,7 +105,7 @@
 }
 
 .why-participate-card-content p{
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     font-weight: 600; 
     color: white;
     text-align: start;
@@ -267,5 +267,22 @@
         
         text-align: center;
     }
+    
+}
+
+
+@media screen and (max-width:480px){
+
+    .why-participate-cards .why-participate-card{
+        
+        
+        width: 90%; 
+      
+        padding: 1rem; 
+       
+    }
+    
+    
+    
     
 }

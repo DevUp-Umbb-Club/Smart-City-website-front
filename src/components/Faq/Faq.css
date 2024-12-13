@@ -1,6 +1,6 @@
 .faq-container {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-inline: 10%;
   font-family: Arial, sans-serif;
   display: flex;

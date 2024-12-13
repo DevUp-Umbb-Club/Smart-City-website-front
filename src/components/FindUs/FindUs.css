@@ -7,8 +7,16 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 30px;
+  position: relative;
 }
+.find-us-section #findushereimage{
 
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  bottom: -10%;
+  z-index: -100;
+}
 .find-us-section h2 {
   color: white;
   font-size: 38px;

@@ -6,6 +6,7 @@
     width: 100%;
     height: 100%;
 
+    overflow: hidden;
     
 
 }
@@ -19,22 +20,24 @@
   padding: 1rem;
   width: 100%;
   position: relative;
+  padding-inline: 3%;
 }
 .still-have-a-question-content #stillhaveaquestionimage{
     object-fit: cover;
     position: absolute;
     left: 0;
-    bottom: -50%;
+    bottom: -10%;
     z-index: -100;
+    
 }
 .still-have-a-question-content h2 {
-  font-size:56px;
-  font-weight: 700;
+    font-size: 2.5rem;
+   font-weight: bold;
   color: white;
   text-align: center;
 }
 .still-have-a-question #contentquestion{
-    font-size: 28px;    
+    font-size: 1.5rem;    
     font-weight: 500;
     color: var(--accent-color);
     
@@ -45,7 +48,7 @@
 .still-have-a-question-cards {
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  justify-content: space-evenly;
   width: 100%;
   align-items: center;
   margin-top: 50px;
@@ -73,8 +76,8 @@
 .still-have-a-question-card-icon img {
     
     object-fit: contain;
-    height: 98px;
-    width: 98px;
+    height: 5rem;
+    width: 5rem;
     
    
 }
