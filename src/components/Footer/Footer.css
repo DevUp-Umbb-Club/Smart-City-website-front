@@ -42,7 +42,8 @@
 
 .footer-content-top-desc button {
     padding: 0.5rem 1.5rem;
-    background-color: var(--accent-color);
+    background-color: rgba(128, 128, 128, 0.56);
+    /* background-color: var(--accent-color); */
     max-width: 150px;
     color: #122C5A;
     border: none;
@@ -54,8 +55,9 @@
 }
 
 .footer-content-top-desc button:hover {
-    background-color: #f1f1f1;
-    color: #0b1e40;
+    /* background-color: #f1f1f1;
+    color: #0b1e40; */
+    cursor: not-allowed;
 }
 
 .footer-content-top-hrefs {

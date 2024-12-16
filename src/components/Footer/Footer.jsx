@@ -29,7 +29,8 @@ const Footer = ({ setIsModalOpen, activeSection, setIsMenuOpen }) => {
         <div className="footer-content-top">
           <div className="footer-content-top-desc">
             <img src={bdcLogo} id="bdclogo" />
-            <button onClick={setIsModalOpen}>Apply Now</button>
+            {/* <button onClick={setIsModalOpen}>Apply Now</button> */}
+            <button >Apply Now</button>
           </div>
           <div className="footer-content-top-hrefs">
             <HashLink
@@ -54,7 +55,7 @@ const Footer = ({ setIsModalOpen, activeSection, setIsMenuOpen }) => {
               className={activeSection === 'judges' && 'active'}
               onClick={() => setIsMenuOpen(false)}
             >
-              Judges
+              Mentors
             </HashLink>
             <HashLink
               smooth

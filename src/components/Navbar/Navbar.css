@@ -30,6 +30,7 @@ ul li button {
   font-weight: 600;
   color: white;
   text-decoration: none;
+
 }
 
 nav ul li a.active {
@@ -43,10 +44,12 @@ nav button {
   height:40px;
   font-weight: 600;
   color: var(--dark-blue);
-  background-color: var(--aqua-green);
+  /* background-color: var(--aqua-green); */
+  background-color: rgba(128, 128, 128, 0.56);
   border: none;
   border-radius: 10px;
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: not-allowed;
 }
 
 nav span {
