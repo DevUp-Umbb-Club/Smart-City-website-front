@@ -126,7 +126,8 @@ const Navbar = ({
           </li>
         </ul>
 
-        <button onClick={handleRegisterClick}>Apply now</button>
+        {/* <button onClick={handleRegisterClick}>Apply now</button> */}
+        <button >Apply now</button>
       </nav>
     </>
   );
