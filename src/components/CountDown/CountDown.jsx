@@ -12,7 +12,7 @@ const CountDown = () => {
     const timerRef = useRef(null); // To store the interval reference
 
     useEffect(() => {
-        const eventDate = new Date("Dec 16, 2024 22:00:00").getTime();
+        const eventDate = new Date("Dec 21, 2024 11:00:00").getTime();
 
         const updateTimer = () => {
             const timeNow = new Date().getTime();
@@ -46,7 +46,7 @@ const CountDown = () => {
     return (
         <section className='countdown'>
             <div className='countdown-content'>
-                <h2>Registration closes in</h2>
+                <h2>Hack ends in</h2>
                 <div className='countdown-timer'>
                     <div className='countdown-box days2'>
                         <span>0</span>
