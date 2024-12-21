@@ -12,7 +12,7 @@ const CountDown = () => {
     const timerRef = useRef(null); // To store the interval reference
 
     useEffect(() => {
-        const eventDate = new Date("Dec 21, 2024 11:00:00").getTime();
+        const eventDate = new Date("Dec 21, 2024 12:00:00").getTime();
 
         const updateTimer = () => {
             const timeNow = new Date().getTime();
